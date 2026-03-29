@@ -1,7 +1,6 @@
 fastapi
 uvicorn
-tensorflow==2.11.0
+onnxruntime
 pillow
 numpy
 python-multipart
-python-3.10.0
