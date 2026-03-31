@@ -105,7 +105,7 @@
 # #  Run server
 # if __name__ == "__main__":
 #     uvicorn.run(app, host="0.0.0.0", port=8000)
-
+import os
 import uvicorn
 import numpy as np
 import onnxruntime as ort
@@ -126,7 +126,7 @@ app.add_middleware(
 )
 
 # --- ONNX Model Loading ---
-MODEL_PATH = r"/Users/shivanshuprakash/Desktop/potato-api/Plant_disease_model.onnx"
+MODEL_PATH = "Plant_disease_model.onnx"
 
 try:
     # Create an Inference Session
